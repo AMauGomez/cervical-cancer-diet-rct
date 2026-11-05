@@ -1,0 +1,4 @@
+characteristic,excluded,included,comparison
+Advanced stage,,,p = 0.002
+Renal impairment at diagnosis,26.4%,6%,"RR 2.42 (1.137-5.154), p = 0.001"
+Less likely to receive at least four cycles of chemotherapy,38.6%,13.8%,"RR 0.424 (0.267-0.676), p = 0.001"

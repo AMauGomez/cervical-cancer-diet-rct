@@ -1,0 +1,9 @@
+domain,outcome,measure,estimate,lower,upper,p,section
+Treatment response,Complete response (RECIST v1.1),RR,1.29,0.92,1.8,0.133,Response to treatment
+Nutrition,Undernutrition at visit 3,RR,0.93,0.44,1.95,>0.9999,Nutritional status and body composition
+Nutrition,Undernutrition at visit 5,RR,0.29,0.06,1.33,0.155,Nutritional status and body composition
+Nutrition,PG-SGA category C at visit 5,RR,0.3415,0.0815,1.383,0.2646,Nutritional status and body composition
+GI toxicity,Anorexia grade ≥2 at visit 3,RR,1.537,0.6235,3.847,0.4052,Gastrointestinal toxicity
+GI toxicity,Diarrhea grade ≥2 at visit 3,RR,1.610,0.7132,3.703,0.2969,Gastrointestinal toxicity
+GI toxicity,Constipation grade ≥2 at visit 4,RR,1.024,0.1869,5.610,>0.9999,Gastrointestinal toxicity
+Late toxicity,Proctopathy (incidence),RR,1.02,0.56,1.87,0.938,Proctopathy and overall survival

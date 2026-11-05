@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Aaron Mauricio Gómez Jiménez">
+
+<title>Anti-inflammatory vs low-residue diet during chemoradiotherapy for cervical cancer</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#my-role" id="toc-my-role" class="nav-link" data-scroll-target="#my-role">My role</a></li>
+  <li><a href="#trial-design" id="toc-trial-design" class="nav-link" data-scroll-target="#trial-design">Trial design</a></li>
+  <li><a href="#statistical-approach" id="toc-statistical-approach" class="nav-link" data-scroll-target="#statistical-approach">Statistical approach</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#limitations-stated-in-the-article" id="toc-limitations-stated-in-the-article" class="nav-link" data-scroll-target="#limitations-stated-in-the-article">Limitations stated in the article</a></li>
+  <li><a href="#if-i-ran-the-next-trial" id="toc-if-i-ran-the-next-trial" class="nav-link" data-scroll-target="#if-i-ran-the-next-trial">If I ran the next trial</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#how-to-cite" id="toc-how-to-cite" class="nav-link" data-scroll-target="#how-to-cite">How to cite</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Anti-inflammatory vs low-residue diet during chemoradiotherapy for cervical cancer</h1>
+<p class="subtitle lead">Statistical analysis of a randomised controlled trial · Frontiers in Nutrition 2026</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Aaron Mauricio Gómez Jiménez </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Article:</strong> Luvián-Morales J, Rueda-Escalona AA, Delgadillo-González M, Cetina-Pérez LC, Villalpando-Sánchez DC, <strong>Gómez-Jiménez AM</strong>, Rodríguez-Moreno MI, Medina-Contreras O, Castro-Eguiluz D. <em>Frontiers in Nutrition</em> 2026; 13: 1835417. <a href="https://doi.org/10.3389/fnut.2026.1835417">doi:10.3389/fnut.2026.1835417</a> (open access) · Trial registration <a href="https://clinicaltrials.gov/study/NCT03994055">NCT03994055</a> · <a href="https://github.com/AMauGomez/cervical-cancer-diet-rct">Code on GitHub</a></p>
+<p><strong>Skills shown:</strong> randomised controlled trials · intention-to-treat vs per-protocol analysis · multiple imputation and Rubin’s rules · mixed models for repeated measures · survival analysis · effect sizes with confidence intervals</p>
+<p>Every number on this page is taken from the published article.</p>
+<style>
+.flow{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0 .4rem;align-items:stretch}
+.flow .step{flex:1 1 150px;border:1px solid #dadce0;border-radius:10px;padding:.75rem .8rem;background:#fafbfc}
+.flow .step .n{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:#5f6368}
+.flow .step .big{font-size:1.35rem;font-weight:700;line-height:1.15;margin:.2rem 0}
+.flow .step .txt{font-size:.85rem;color:#3c4043;line-height:1.3}
+.flow .step.hl{border-color:#1a73e8;background:#e8f0fe}
+.keybox{border-left:4px solid #1a73e8;background:#f8f9fa;padding:.8rem 1rem;margin:1rem 0;border-radius:4px}
+.keybox ul{margin-bottom:0}
+</style>
+<div class="flow">
+ <div class="step"><div class="n">Design</div><div class="big">RCT, 2 arms</div><div class="txt">blocked randomisation, National Cancer Institute (INCan), 2018–2024</div></div>
+ <div class="step"><div class="n">Participants</div><div class="big">136 → 83</div><div class="txt">randomised → completed all five visits and analysed</div></div>
+ <div class="step hl"><div class="n">Missing data</div><div class="big">35 imputations</div><div class="txt">MICE with predictive mean matching, pooled with Rubin's rules</div></div>
+ <div class="step"><div class="n">Follow-up</div><div class="big">Up to 6 years</div><div class="txt">overall survival (median 44.4 months) and proctopathy by colonoscopy</div></div>
+</div>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p><strong>Question.</strong> Women with locally advanced cervical cancer who receive chemoradiotherapy often develop gastrointestinal toxicity and undernutrition. The standard advice is a restrictive <strong>low-residue diet</strong> (low fibre, lactose and fat), although the evidence behind it is thin. Would an <strong>anti-inflammatory diet</strong>, rich in fibre, omega-3 fatty acids, antioxidants and probiotics, do better?</p>
+<p><strong>Answer.</strong> Both groups recovered nutritionally by three months after treatment. The anti-inflammatory diet <strong>tended</strong> to do better on nutritional recovery, persistent gastrointestinal symptoms and tumour response (complete response 70.7% vs 54.8%, RR 1.29, 95% CI 0.92–1.8, p = 0.133), but these differences were not statistically significant. The clearest differences were in inflammation: lower IL-1β and IL-17A, and faecal calprotectin that stayed stable instead of rising after treatment.</p>
+<div class="keybox">
+<p><strong>Why the statistics of this trial are not routine</strong></p>
+<ul>
+<li><strong>A wide dataset:</strong> more than 50 outcomes per woman (diet, nutritional status and body composition, toxicity, cytokines, tumour response, survival and quality of life), measured at up to five visits, in a small sample. Every analytic choice multiplies across outcomes and visits.</li>
+<li><strong>Attrition:</strong> 53 of 136 randomised women did not complete the five visits, and those who left were different (more advanced stage, more renal impairment). The analysis had to show that this did not drive the conclusions: per-protocol and intention-to-treat models, and a repeated-measures model on everyone with two CT scans.</li>
+<li><strong>Missing data:</strong> multiple imputation (35 datasets), with Rubin’s rules where they apply and a separate rule for rank tests where they do not, plus a sensitivity analysis.</li>
+<li><strong>Repeated measures:</strong> five visits per woman, analysed with mixed-effects models and their time-by-diet interaction, not only visit-by-visit tests.</li>
+<li><strong>Honest effect sizes:</strong> relative risks and Hodges–Lehmann median differences with 95% confidence intervals, and non-significant results reported as trends, not effects.</li>
+</ul>
+</div>
+</section>
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My role</h2>
+<p>I am credited with <strong>data curation and formal analysis</strong>, and I directed the statistical analysis of the trial:</p>
+<ul>
+<li>chose the statistical method for each outcome and reviewed every model, including the per-protocol and intention-to-treat analyses;</li>
+<li>designed and ran in R the missing-data strategy: multiple imputation by chained equations, pooling with Rubin’s rules, and the sensitivity analysis of the imputations;</li>
+<li>computed the effect sizes (relative risks and Hodges–Lehmann median differences);</li>
+<li>wrote the statistical responses across two rounds of peer review.</li>
+</ul>
+<p>The trial was designed and conducted by the clinical research team at the Instituto Nacional de Cancerología (INCan), Mexico City.</p>
+</section>
+<section id="trial-design" class="level2">
+<h2 class="anchored" data-anchor-id="trial-design">Trial design</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/participant_flow.png" class="img-fluid figure-img" width="638"></p>
+<figcaption>Participant flow, with the numbers reported in the article.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Participants:</strong> women aged 18 or older with locally advanced cervical cancer (FIGO 2018 stages IB3 to IVA) starting chemoradiotherapy followed by brachytherapy as first-line treatment, ECOG 0–2.</li>
+<li><strong>Randomisation:</strong> a pre-established list (randomization.org) in three blocks reflecting INCan’s case mix: 40% without comorbidities, 30% with comorbidities and 30% with renal deterioration. Assignments were sent by a collaborator not involved in assessments; as the article notes, allocation concealment was not possible because of the nature of the intervention.</li>
+<li><strong>Interventions:</strong> an individualised <strong>anti-inflammatory diet</strong> (30% of energy from fat; foods rich in anti-inflammatory compounds, soluble fibre and probiotics; green tea, chia seeds, ginger and turmeric provided) or an individualised <strong>low-residue diet</strong> (fibre ≤ 20 g, lactose ≤ 5 g, fat ≤ 20% of energy).</li>
+<li><strong>Visits:</strong> V1 two weeks before chemoradiotherapy, V2 at its start, V3 after three cycles of chemotherapy, V4 after brachytherapy, V5 twelve weeks later.</li>
+<li><strong>Primary outcomes:</strong> nutritional status and systemic inflammation. <strong>Secondary:</strong> gastrointestinal toxicity (CTCAE v5), intestinal inflammation (faecal calprotectin), tumour response (RECIST 1.1), proctopathy, overall survival and quality of life.</li>
+<li><strong>Sample size:</strong> 130 women (two proportions of undernutrition, 81.4% vs 59.7%, α = 5%, power 80%). The target was not reached.</li>
+</ul>
+</section>
+<section id="statistical-approach" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-approach">Statistical approach</h2>
+<section id="attrition-who-left-and-does-it-matter" class="level3">
+<h3 class="anchored" data-anchor-id="attrition-who-left-and-does-it-matter">Attrition: who left, and does it matter?</h3>
+<p>Of 136 randomised women, 83 completed the study. Those who did not were systematically different:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Women who did not complete the study vs those analysed (as reported in the Results).</caption>
+<colgroup>
+<col style="width: 49%">
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Characteristic</th>
+<th style="text-align: left;">Did not complete</th>
+<th style="text-align: left;">Completed</th>
+<th style="text-align: left;">Comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Advanced stage</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">p = 0.002</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Renal impairment at diagnosis</td>
+<td style="text-align: left;">26.4%</td>
+<td style="text-align: left;">6%</td>
+<td style="text-align: left;">RR 2.42 (1.137-5.154), p = 0.001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Less likely to receive at least four cycles of chemotherapy</td>
+<td style="text-align: left;">38.6%</td>
+<td style="text-align: left;">13.8%</td>
+<td style="text-align: left;">RR 0.424 (0.267-0.676), p = 0.001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>A per-protocol analysis of the 83 completers can therefore be biased. Three analyses addressed it:</p>
+<ul>
+<li>a <strong>multivariable model of malnutrition per protocol</strong>, and the <strong>same model by intention to treat</strong>: in neither was the diet group independently associated with malnutrition (in the intention-to-treat model only comorbidities were);</li>
+<li>a <strong>general linear model with repeated measures</strong> of the muscle mass index from computed tomography, on the 48 + 55 randomised women with both an initial and a final scan: no time-by-diet interaction (p = 0.688). Treatment response (p = 0.016) and the use of a radiosensitiser (p = 0.045) were associated with the change, and the diet was not.</li>
+</ul>
+</section>
+<section id="missing-data-multiple-imputation" class="level3">
+<h3 class="anchored" data-anchor-id="missing-data-multiple-imputation">Missing data: multiple imputation</h3>
+<p>Missing values were imputed with <strong>multivariate imputation by chained equations (MICE)</strong> and <strong>predictive mean matching</strong>, 15 iterations per chain and <strong>35 imputed datasets</strong>. How results were combined depended on the analysis:</p>
+<ul>
+<li><strong>parametric models:</strong> Rubin’s rules, averaging the estimates over the 35 datasets and combining within- and between-imputation variance, so the standard errors include the uncertainty due to missing data;</li>
+<li><strong>rank tests</strong> (Mann–Whitney, Friedman), for which Rubin’s rules do not apply: each test was run in all 35 datasets and the <strong>median p-value</strong> is reported.</li>
+</ul>
+<p>A missing-data sensitivity analysis is reported in Supplementary Material 2 of the article.</p>
+</section>
+<section id="repeated-measures-effect-sizes-and-survival" class="level3">
+<h3 class="anchored" data-anchor-id="repeated-measures-effect-sizes-and-survival">Repeated measures, effect sizes and survival</h3>
+<ul>
+<li><strong>Within each diet over the five visits:</strong> Friedman test (continuous) and Cochran’s Q (categorical). <strong>Between diets at each visit:</strong> Mann–Whitney U and chi-squared or Fisher’s exact test.</li>
+<li><strong>Mixed-effects models</strong> for every longitudinal outcome, with fixed effects for time, diet and their interaction and a random effect for each woman. The interaction term is the one that tests whether the two diets diverge over time.</li>
+<li><strong>Effect sizes:</strong> relative risks with 95% CIs for categorical outcomes; the <strong>Hodges–Lehmann estimator</strong> for median differences of non-normal continuous variables.</li>
+<li><strong>Time to event:</strong> Kaplan–Meier curves and log-rank tests for proctopathy and overall survival, and Cox proportional-hazards models to adjust for clinical covariates.</li>
+</ul>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="baseline-randomisation-produced-comparable-groups" class="level3">
+<h3 class="anchored" data-anchor-id="baseline-randomisation-produced-comparable-groups">Baseline: randomisation produced comparable groups</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Selected rows of the published Table 1. Differences: Hodges–Lehmann estimator; p: Mann–Whitney U, chi-squared or Fisher’s exact test.</caption>
+<colgroup>
+<col style="width: 27%">
+<col style="width: 13%">
+<col style="width: 21%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">All (n = 83)</th>
+<th style="text-align: left;">Anti-inflammatory (n = 41)</th>
+<th style="text-align: left;">Low-residue (n = 42)</th>
+<th style="text-align: left;">Difference (95% CI)</th>
+<th style="text-align: left;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Age (years), median (Q1-Q3)</td>
+<td style="text-align: left;">45 (38-55)</td>
+<td style="text-align: left;">45 (38.5-58)</td>
+<td style="text-align: left;">46.5 (37.5-55)</td>
+<td style="text-align: left;">-1 (-6, 4)</td>
+<td style="text-align: left;">0.964</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Geriatric patients, n (%)</td>
+<td style="text-align: left;">12 (14.5)</td>
+<td style="text-align: left;">7 (17.1)</td>
+<td style="text-align: left;">5 (11.9)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.503</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BMI (kg/m2), median (Q1-Q3)</td>
+<td style="text-align: left;">27.8 (25.2-32.1)</td>
+<td style="text-align: left;">28.37 (25.4-31)</td>
+<td style="text-align: left;">27.21 (24.6-32.6)</td>
+<td style="text-align: left;">0.21 (-2.13, 2.43)</td>
+<td style="text-align: left;">0.649</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ECOG 0, n (%)</td>
+<td style="text-align: left;">41 (49.4)</td>
+<td style="text-align: left;">23 (56.1)</td>
+<td style="text-align: left;">18 (42.9)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.462</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Stage IIIB-IIIC, n (%)</td>
+<td style="text-align: left;">52 (62.7)</td>
+<td style="text-align: left;">25 (61)</td>
+<td style="text-align: left;">27 (64.3)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.792</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Squamous histology, n (%)</td>
+<td style="text-align: left;">63 (75.9)</td>
+<td style="text-align: left;">32 (78)</td>
+<td style="text-align: left;">31 (73.8)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.893</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cisplatin, n (%)</td>
+<td style="text-align: left;">77 (92.7)</td>
+<td style="text-align: left;">37 (90.2)</td>
+<td style="text-align: left;">40 (95.2)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.576</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&gt;=4 cycles of chemotherapy, n (%)</td>
+<td style="text-align: left;">72 (86.7)</td>
+<td style="text-align: left;">36 (87.8)</td>
+<td style="text-align: left;">36 (85.7)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.779</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Comorbidities, n (%)</td>
+<td style="text-align: left;">46 (55.4)</td>
+<td style="text-align: left;">23 (56.1)</td>
+<td style="text-align: left;">23 (54.8)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.903</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Type 2 diabetes, n (%)</td>
+<td style="text-align: left;">8 (9.6)</td>
+<td style="text-align: left;">3 (7.3)</td>
+<td style="text-align: left;">5 (11.9)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.713</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Renal deterioration, n (%)</td>
+<td style="text-align: left;">5 (6)</td>
+<td style="text-align: left;">3 (7.3)</td>
+<td style="text-align: left;">2 (4.8)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.625</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="main-outcomes" class="level3">
+<h3 class="anchored" data-anchor-id="main-outcomes">Main outcomes</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Main results as reported in the article. PG-SGA: Patient-Generated Subjective Global Assessment (B or C = at nutritional risk).</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Outcome</th>
+<th style="text-align: left;">Anti-inflammatory diet</th>
+<th style="text-align: left;">Low-residue diet</th>
+<th style="text-align: left;">Comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Participants analysed</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">42</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Complete response</td>
+<td style="text-align: left;">29 (70.7%)</td>
+<td style="text-align: left;">23 (54.8%)</td>
+<td style="text-align: left;">RR 1.29 (0.92-1.8), p = 0.133</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PG-SGA B or C at visit 3 (worst point)</td>
+<td style="text-align: left;">68%</td>
+<td style="text-align: left;">66%</td>
+<td style="text-align: left;">not significant at any visit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PG-SGA B or C at visit 5</td>
+<td style="text-align: left;">5%</td>
+<td style="text-align: left;">14%</td>
+<td style="text-align: left;">PG-SGA C: RR 0.3415 (0.0815-1.383), p = 0.2646</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Nausea at visit 3</td>
+<td style="text-align: left;">83%</td>
+<td style="text-align: left;">81%</td>
+<td style="text-align: left;">no significant difference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Proctopathy (median follow-up 27.1 months)</td>
+<td style="text-align: left;">14 (34.1%)</td>
+<td style="text-align: left;">14 (33.3%)</td>
+<td style="text-align: left;">RR 1.02 (0.56-1.87), p = 0.938; HR for time to diagnosis 1.092 (0.526-2.266), p = 0.734</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Deaths (median follow-up 44.4 months)</td>
+<td style="text-align: left;">8 (19.5%)</td>
+<td style="text-align: left;">13 (31%)</td>
+<td style="text-align: left;">log-rank p = 0.152</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">QLQ-C30 summary score (visit 1 / 3 / 4 / 5)</td>
+<td style="text-align: left;">85 / 78 / 86 / 93</td>
+<td style="text-align: left;">81 / 77 / 80 / 91</td>
+<td style="text-align: left;">p = 0.688 / 0.809 / 0.045 / 0.097</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/published_effect_sizes.png" class="img-fluid figure-img" width="750"></p>
+<figcaption>Relative risks reported in the article, with 95% confidence intervals.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Nutrition:</strong> undernutrition peaked at visit 3 in both arms and improved by visit 5, when it was less frequent with the anti-inflammatory diet (RR 0.29, 95% CI 0.06–1.33, p = 0.155). Changes over time were significant in both arms.</li>
+<li><strong>Inflammation:</strong> the low-residue group had higher IL-1β at visit 3 and higher IL-17A at visit 5. Faecal calprotectin stayed stable with the anti-inflammatory diet and rose again after treatment with the low-residue diet, with a significant time-by-diet interaction.</li>
+<li><strong>Survival:</strong> over a median follow-up of 44.4 months, 8 women (19.5%) died in the anti-inflammatory arm and 13 (31%) in the low-residue arm (log-rank p = 0.152). In the bivariate Cox model the low-residue diet was associated with higher mortality (HR 3.181, 95% CI 1.025–9.869, p = 0.045), but not after adjustment. Response to treatment remained independently associated with mortality, with the highest risk for disease progression (HR 18.773, 95% CI 4.914–71.717).</li>
+</ul>
+</section>
+</section>
+<section id="limitations-stated-in-the-article" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-stated-in-the-article">Limitations stated in the article</h2>
+<ul>
+<li><strong>Sample size:</strong> the calculated 130 participants was not reached and withdrawal exceeded 20%, reducing statistical power.</li>
+<li><strong>Outcome-related exclusions:</strong> some women were excluded for malnutrition, unmanageable toxicity or disease progression, which may bias the per-protocol comparison.</li>
+<li><strong>Adherence and lifestyle:</strong> adherence was measured with 24-hour recalls without a biomarker; physical activity was not assessed; the COVID-19 pandemic may have affected food choices.</li>
+</ul>
+</section>
+<section id="if-i-ran-the-next-trial" class="level2">
+<h2 class="anchored" data-anchor-id="if-i-ran-the-next-trial">If I ran the next trial</h2>
+<p>This trial was run in a real clinical setting, through the COVID-19 pandemic, with patients undergoing aggressive treatment. These are the statistical choices I would build into the protocol of the next one, at the design stage, where they cost least:</p>
+<ol type="1">
+<li><strong>Define the estimand first</strong> (ICH E9(R1)). Hospitalisation with nutritional support, unmanageable toxicity and disease progression are <em>intercurrent events</em>. Deciding in advance how each is handled, for example with a treatment-policy strategy, turns post-randomisation exclusions into a planned part of the analysis.</li>
+<li><strong>One prespecified primary analysis on everyone randomised.</strong> For a primary outcome measured at five visits, a single mixed model for repeated measures with a time-by-diet contrast, by intention to treat, instead of a test at each visit.</li>
+<li><strong>Plan the sample size for dropout.</strong> Inflating the target for attrition like the one seen here (53 of 136 randomised) protects the power the design calls for.</li>
+<li><strong>Test what happens if data are missing not at random.</strong> Delta-adjusted multiple imputation (a tipping-point analysis) shows how far the imputed values of women who dropped out must shift before the conclusion changes.</li>
+<li><strong>Pool non-parametric results formally.</strong> Combine test statistics across imputations (the D2 rule) or use semi-parametric models, such as proportional-odds regression, that pool directly with Rubin’s rules.</li>
+<li><strong>Control multiplicity.</strong> A fixed testing hierarchy for the primary outcomes, and secondary outcomes such as the cytokine panel reported as exploratory or with false-discovery-rate control.</li>
+<li><strong>Adjust for the randomisation strata</strong> (comorbidity blocks) in the primary model, as recommended for stratified designs.</li>
+</ol>
+</section>
+<section id="code" class="level2">
+<h2 class="anchored" data-anchor-id="code">Code</h2>
+<p>The patient data are not public. The repository contains the analysis workflow in R, run on <strong>simulated data</strong> with the trial’s structure (136 women randomised in blocks, five visits, dropout related to baseline risk, survival with censoring):</p>
+<ol type="1">
+<li>comparison of completers and non-completers (relative risks);</li>
+<li>MICE with predictive mean matching, 35 imputations and 15 iterations;</li>
+<li>Rubin’s rules for parametric models and the median p-value for rank tests;</li>
+<li>relative risks and Hodges–Lehmann median differences;</li>
+<li>a linear mixed model with a likelihood-ratio test of the time-by-diet interaction;</li>
+<li>Kaplan–Meier, log-rank test and Cox regression;</li>
+<li>the same model per protocol and by intention to treat with imputation.</li>
+</ol>
+<p>The simulated output only shows that the code runs; it is not the trial’s result, so none of it appears on this page.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> run_all.R   <span class="co"># about a minute</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="how-to-cite" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-cite">How to cite</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">luvianmorales2026diet</span>,</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>  = {Luvián-Morales, Julissa and Rueda-Escalona, Ariadna Alejandra and Delgadillo-González, Merari and</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>             Cetina-Pérez, Lucely del Carmen and Villalpando-Sánchez, Diana Carolina and Gómez-Jiménez, Aaron Mauricio and</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>             Rodríguez-Moreno, Marcos Isaac and Medina-Contreras, Oscar and Castro-Eguiluz, Denisse},</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>   = {Benefits of an anti-inflammatory diet compared to a low-residue diet during concurrent</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>             chemoradiation therapy for patients with locally advanced cervical cancer: a randomized clinical trial},</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">journal</span> = {Frontiers in Nutrition},</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>    = {2026},</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">volume</span>  = {13},</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">pages</span>   = {1835417},</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">doi</span>     = {10.3389/fnut.2026.1835417}</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Study details and results are reproduced from the open-access article (CC BY 4.0).</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

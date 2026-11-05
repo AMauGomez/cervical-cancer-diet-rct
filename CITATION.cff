@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this analysis, please cite the article."
+title: "Statistical analysis for a randomised trial of an anti-inflammatory vs a low-residue diet during chemoradiotherapy for cervical cancer"
+authors:
+  - family-names: "Gómez-Jiménez"
+    given-names: "Aaron Mauricio"
+    orcid: "https://orcid.org/0009-0003-1099-0431"
+license: MIT
+repository-code: "https://github.com/AMauGomez/cervical-cancer-diet-rct"
+preferred-citation:
+  type: article
+  title: "Benefits of an anti-inflammatory diet compared to a low-residue diet during concurrent chemoradiation therapy for patients with locally advanced cervical cancer: a randomized clinical trial"
+  authors:
+    - family-names: "Luvián-Morales"
+      given-names: "Julissa"
+    - family-names: "Rueda-Escalona"
+      given-names: "Ariadna Alejandra"
+    - family-names: "Delgadillo-González"
+      given-names: "Merari"
+    - family-names: "Cetina-Pérez"
+      given-names: "Lucely del Carmen"
+    - family-names: "Villalpando-Sánchez"
+      given-names: "Diana Carolina"
+    - family-names: "Gómez-Jiménez"
+      given-names: "Aaron Mauricio"
+    - family-names: "Rodríguez-Moreno"
+      given-names: "Marcos Isaac"
+    - family-names: "Medina-Contreras"
+      given-names: "Oscar"
+    - family-names: "Castro-Eguiluz"
+      given-names: "Denisse"
+  journal: "Frontiers in Nutrition"
+  volume: 13
+  start: 1835417
+  year: 2026
+  doi: "10.3389/fnut.2026.1835417"

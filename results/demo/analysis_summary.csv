@@ -1,0 +1,11 @@
+analysis,estimate,lower,upper
+Attrition: renal deterioration (RR dropout vs completers),2.7282051282051283,1.5521026308592325,4.795496814179301
+"ANCOVA strength V5, pooled with Rubin's rules (AID − LRD, kg)",0.7649489091500974,-0.17459787339676913,1.7044956916969638
+"Mann–Whitney strength V5, median p over 35 imputations",0.3947673596972493,NA,NA
+"Complete response (RR, AID vs LRD)",1.28125,0.9327762441780216,1.7599092737901008
+"Hodges–Lehmann median difference, strength V5 (kg)",1.2660963782121395,-0.5117447650851944,3.005390475955803
+Mixed model: time-by-arm interaction (LRT p),0.016294988171145993,NA,NA
+Overall survival: log-rank p,0.009328192496224408,NA,NA
+Overall survival: Cox HR for AID,0.5900042111342503,0.3453800116592878,1.0078897371152713
+"Undernutrition V5, per protocol (OR for AID)",0.25714643215707184,0.026352601593103365,2.5092128888108207
+"Undernutrition V5, ITT with imputation (OR for AID)",0.4540633813311183,0.0592270009436573,3.4810736822886184
